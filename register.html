@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            background: url(images/登录背景.jpg);
+            background-size: cover
+        }
+
+        .big {
+            width: 350px;
+            height: 200px;
+            border: 3px solid #000;
+            position: relative;
+            margin: 200px auto;
+        }
+
+        .big p {
+            width: 350px;
+            height: 50px;
+            font: 700 18px "华文楷体";
+            text-align: center;
+            line-height: 50px;
+        }
+
+        .big #name {
+            display: block;
+            width: 170px;
+            height: 20px;
+            position: absolute;
+            top: 65px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .big #password {
+            display: block;
+            width: 170px;
+            height: 20px;
+            position: absolute;
+            top: 95px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        #password2{
+            display: block;
+            width: 170px;
+            height: 20px;
+            position: absolute;
+            top: 125px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .big #click {
+            display: block;
+            width: 170px;
+            height: 20px;
+            position: absolute;
+            top: 155px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #login {
+            font: 500 12px "华文楷体";
+            position: absolute;
+            bottom: 5px;
+            right: 20px;
+            cursor: pointer;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div class="big">
+        <p>新账号注册</p>
+        <input type="text" id="name" placeholder="用户名">
+        <input type="password" id="password" placeholder="密码">
+        <input type="password" id="password2" placeholder="确认密码">
+        <button id="click" type="submit" class="btn btn-success">注册</button>
+        <span id="login">账号登录</span>
+
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script>
+
+        $("#click").click(function () {
+            if ( ($("#name").val() !== "") &&($("#password").val() !== "")) {
+                if(($("#password").val() === $("#password2").val())){
+                let http = new XMLHttpRequest()
+                http.open("get", `http://10.35.161.139:8080/register?name=${$("#name").val()}&password=${$("#password").val()}`)
+                http.send()
+                http.onreadystatechange = function () {
+                    if (http.readyState === 4) {
+                        if (http.responseText === "success") {
+                            alert("注册新用户成功，点击去登录");
+                            location.href = "http://10.35.161.139/毕设/login.html";
+                       
+                        }
+                        else {
+                            alert("注册失败")
+                        }
+}
+                    }
+                }
+            } else {
+                alert("请重新输入。 用户名、密码不可为空")
+            }
+
+        })
+        $("#login").click(function(){
+            location.href = "http://10.35.161.139/毕设/login.html";
+        })
+
+    </script>
+
+</body>
+
+</html>
