@@ -1,0 +1,532 @@
+@charset "utf-8";
+html body{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: url(../images/live-背景.jpg) repeat 100% 100%
+   
+}
+
+/* 购物车，电话微信 */
+
+.phone{
+    width: 80px;
+    height: 323px;
+    position: fixed;
+    top: 300px;
+    right: 70px;
+    border: 1px solid #ccc;
+    background:rgba(85, 83, 83, 0.2);
+}
+.phone p{
+    width: 80px;
+    height: 80px;
+    border-bottom:1px solid #000; 
+}
+.phone p .icon {
+    width: 2.5em;
+    height: 2.5em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    margin: 5px 15px;
+  }
+  .phone p span{
+      width: 80px;
+      height: 30px;
+      font-family:"华文楷体"; 
+      text-align: center;
+      display: block;
+  }
+
+/* 头部 */
+.big-head{
+    width: 100%;
+    height: 50px;
+    background: #000;
+}
+.head{
+    width: 1500px;
+    height: 50px;
+    margin: 0 auto;
+    position: relative;
+    color: #fff;
+    font: 500 18px "华文楷体";
+}
+.head p{
+    position: absolute;
+    top: 10px;
+    left: 200px;
+    
+}
+.head p span{
+    padding: 20px;
+}
+.head ul{
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    right: 100px;
+}
+
+.head ul li{
+    width: 50px;
+    height: 50px;
+    float: left;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+/* 轮播图 */
+#wrap{
+    width: 1500px;
+    height: 391px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#imgWrap{
+    width: 1500px;
+    height: 391px;
+    overflow: hidden;
+}
+#imgWrap li{
+    display:none;
+}
+#imgWrap li.show{
+    display: block;
+}
+ #prev{
+    position: absolute;
+    top: 40%;
+    left: 150px;
+    cursor: pointer;
+    opacity: .7;
+    transition: all .5s;
+
+}
+ #next{
+    position: absolute;
+    top: 40%;
+    right:150px;
+    cursor: pointer;
+    opacity: .7;
+    transition: all .5s;
+
+}
+#prev:hover, #next:hover {
+    opacity: 1;
+    transform: scale(1.1)
+ }
+ #dotWrap{
+     position: absolute;
+     bottom: 15px;
+     left: 50%;
+     transform: translate(-50%,0)
+ }
+ /* 生成小圆点 */
+ #dotWrap {
+    position:absolute;
+    bottom:15px;
+    left:50%;
+    transform: translate(-50%,0);
+}
+#dotWrap li{
+    float:left;
+    width: 16px;
+    height: 16px;
+    background-color:#fff;
+    margin-right:8px;
+    cursor:pointer;
+    border-radius:50%;
+    display: block;
+}
+#dotWrap .focus{
+    background-color:orange;
+}
+ /* 所以列表 */
+ .slideshow .list{
+    width: 250px;
+    height: 391px;
+    background: #eff;
+    position: absolute;
+    top: 0;
+    left: 250px;
+    
+ }
+ .slideshow .list ul{
+     width: 230px;
+     height: 115px;
+     border-bottom: 1px dotted #666;
+     padding: 15px 10px 0 10px;
+     overflow: hidden;
+     cursor: pointer;
+     
+ }
+ .slideshow .list ul:hover{
+     border-left: 3px solid #ff6a00
+ }
+ .slideshow .list ul li{
+     display: block;
+     float: left;
+     font: 600 18px "华文楷体";
+     padding: 6px 9px 0 0;
+     color: #888;
+ }
+ .slideshow .list ul p{
+    font: 800 22px "华文楷体";
+    color: #ff6a00
+ }
+ .middle{
+     width: 1500px;
+     height: 45px;
+     position: relative;
+     margin: 0 auto;
+     
+ }
+ .middle .listbox{
+     width: 230px;
+     height: 35px;
+     position: absolute;
+     left: 250px;
+     border-radius: 0 0 20px 20px;
+     font-size: 18px;
+     font: 700 18px "华文楷体";
+     background:rgba(179, 176, 176, 0.247);
+     padding:8px 0 0 20px;
+     color: #ff6a00
+     
+     
+ }
+ .middle .listbox span{
+     width: 30px;
+     height: 30px;
+     font: 700 18px "华文楷体";
+     padding-left: 100px;
+     cursor: pointer;
+     color: #ff6a00
+ }
+ /* 爱情主题 */
+ .clearfix{
+     width: 1500px;
+     height: 80px;
+     margin: 0 auto;
+     position: relative;    
+ }
+.clearfix .bigt{
+    width: 160px;
+    height:80px;
+    font: 700 38px "华文楷体";
+    line-height: 80px;
+    display: block;float: left; 
+}
+.clearfix .desc{
+    width: 250px;
+    height: 80px;
+    font: 500 20px "华文楷体";
+    line-height: 90px;
+    /* text-align: left; */
+    display: block; 
+    float: left; 
+   
+}
+.clearfix .link-cate{
+    width: 500px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    font: 500 20px "华文楷体";
+}
+.clearfix .link-cate>a{
+    color: #000;
+}
+.live{
+    width: 1500px;
+    height: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.live .live-left{
+    width: 480px;
+    height: 520px;
+    float: left;
+    padding: 10px 20px 0 30px;
+}
+.live .live-left>img{
+    border-radius: 30px
+}
+.live .live-rigth{
+    width: 950px;
+    height: 500px;
+    float: left;
+    
+}
+.live-rigth .live-one{
+    width: 950px;
+    height: 250px;
+    /* background: #000; */
+}
+.live-rigth .live-one>li{
+    width: 200px;
+    height: 220px;
+    float: left;
+    margin: 20px 37px 0 0;
+}
+.live-rigth .live-one>li img{
+    border-radius: 50%;
+}
+/* 礼物专区 */
+.giftclear{
+    width: 1500px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative; 
+}
+.giftclear .giftbigt{
+   width: 160px;
+   height:100px;
+   font: 700 38px "华文楷体";
+   line-height: 110px;
+   display: block;
+   float: left; 
+   
+}
+.giftclear .giftdesc{
+   width: 250px;
+   height: 100px;
+   font: 500 20px "华文楷体";
+   line-height: 120px;
+   display: block; 
+   float: left; 
+  
+}
+.giftclear .giftlink-cate{
+   width: 370px;
+   height: 30px;
+   position: absolute;
+   right: 0;
+   bottom: 20px;
+   font: 500 20px "华文楷体";
+}
+.giftclear .giftlink-cate>a{
+    color: #000;
+}
+
+.gift{
+   width: 1500px;
+   height: 500px;
+   margin: 0 auto;
+   overflow: hidden;
+}
+.gift .gift-left{
+   width: 480px;
+   height: 520px;
+   float: left;
+   padding: 10px 20px 0 30px;
+}
+.gift .gift-left>img{
+   border-radius: 30px
+}
+.gift .gift-rigth{
+   width: 950px;
+   height: 500px;
+   float: left;
+   
+}
+.gift-rigth .gift-one{
+   width: 950px;
+   height: 250px;
+}
+.gift-rigth .gift-one>li{
+   width: 200px;
+   height: 220px;
+   float: left;
+   margin: 20px 37px 0 0;
+}
+.gift-rigth .gift-one>li img{
+   border-radius: 50%;
+}
+/* 底部 */
+.foot{
+    width: 1500px;
+    height: 250px;
+    background: #ecedef;
+    margin:0 auto;
+    margin-top: 27px;
+    padding-top: 20px;
+    font-family: "华文楷体";
+}
+.foot .box1{
+    width:500px;
+    height:202px;
+    border-right: 1px solid #d1d1d1;
+    float: left;
+    margin:12px 0 0 100px;
+}
+.foot .box1 ul{
+    width: 126px;
+    height: 202px;
+    float: left;
+    margin-right: 40px;
+}
+.foot .box1 ul p{
+    font-size: 20px;
+    color: #000;
+    text-align: center
+}
+
+.foot .box1 ul li{
+    width: 126px;
+    height: 22px;
+    float: left;
+    text-align: center;
+    margin-top: 7px;
+    color: #000;
+}
+.foot .box1 ul li>img{
+    float: left;
+    margin-top: 7px;
+}
+.foot .box2{
+    width: 400px;
+    height: 206px;
+    float: left;
+    border-right: 1px solid #d1d1d1;
+    margin-top: 12px;
+}
+.foot .box2 .p1{
+    width: 400px;
+    font-size: 12px;
+    margin-top: 32px;
+    text-align: center;
+    color: #000;
+}
+.foot .box2 .p2{
+    width: 400px;
+    font-size: 12px;
+    margin: 18px 0 0 0;
+    text-align: center;
+    color: #000;
+}
+.foot .box2 img{
+    width: 100px;
+    height: 100px;
+    margin: 0 150px;
+}
+.foot .box3{
+    width:300px;
+    height: 170px;
+    float: left;
+}
+.foot .box3 ul{
+    width: 270px;
+    height: 150px;
+    float: left;
+    margin:27px 0 0 47px
+}
+.foot .box3 ul li{
+    width: 270px;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    color: #000;
+    font-size: 12px
+}
+
+.end{
+    width: 1500px;
+    height: 40px;
+    background: #000;
+    color: #fff;
+    font-size: 12px;
+    line-height: 40px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+/* 登录 */
+#mask{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+ #mask>img{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* opacity: 0.4; */
+    /* background-color: rgba(0, 0, 0, .7); */
+} 
+.node{
+    display: none;
+}
+#mask.loginbig {
+    width: 350px;
+    height: 200px;
+    border: 3px solid #000;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%,0)oy/89p[pk7u5yji5iio5ioiojijoiji5iohji]
+    /* margin: 200px auto; */
+}
+
+#mask .loginbig p {
+    width: 350px;
+    height: 50px;
+    font: 700 18px "华文楷体";
+    text-align: center;
+    line-height: 50px;
+}
+
+#mask .loginbig #name {
+    display: block;
+    width: 170px;
+    height: 20px;
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#mask .loginbig #password {
+    display: block;
+    width: 170px;
+    height: 20px;
+    position: absolute;
+    top: 105px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#mask .loginbig #click {
+    display: block;
+    width: 170px;
+    height: 20px;
+    position: absolute;
+    top: 140px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#mask .loginbig #register {
+    font: 500 12px "华文楷体";
+    position: absolute;
+    bottom: 5px;
+    right: 80px;
+    cursor: pointer;
+}
+
+#mask .loginbig #newpass {
+    font: 500 12px "华文楷体";
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
+    cursor: pointer;
+}
+
+

@@ -1,0 +1,332 @@
+html body{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: url(../images/白雪玫瑰背景.jpg);
+    background-size: 100%,100%;
+    font-family:"华文楷体"; 
+   
+}
+/* 购物车，电话微信 */
+
+.phone{
+    width: 80px;
+    height: 323px;
+    position: fixed;
+    top: 300px;
+    right: 70px;
+    border: 1px solid #ccc;
+    background:rgba(85, 83, 83, 0.2);
+}
+.phone p{
+    width: 80px;
+    height: 80px;
+    border-bottom:1px solid #000; 
+}
+.phone p .icon {
+    width: 2.5em;
+    height: 2.5em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    margin: 5px 15px;
+  }
+  .phone p span{
+      width: 80px;
+      height: 30px;
+      text-align: center;
+      display: block;
+  }
+
+/* 头部 */
+.big-head{
+    width: 100%;
+    height: 50px;
+    /* background: #ccc; */
+}
+.head{
+    width: 1500px;
+    height: 50px;
+    margin: 0 auto;
+    position: relative;
+    color: #fff;
+    font: 500 18px "华文楷体";
+}
+.head p{
+    position: absolute;
+    top: 10px;
+    left: 200px;
+    
+}
+.head p span{
+    padding: 20px;
+}
+.head ul{
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    right: 100px;
+}
+
+.head ul li{
+    width: 50px;
+    height: 50px;
+    float: left;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+#nav{
+    width: 100%;
+    height: 70px;
+    background: #fff;
+    position: relative;
+}
+#nav .listbox{
+    width: 230px;
+    height: 45px;
+    position: absolute;
+    left: 200px;
+    bottom: 0;
+    border-radius: 20px 20px 0 0;
+    font-size: 18px;
+    font: 700 20px "华文楷体";
+    background:#ff6a00;
+    padding:8px 0 0 20px;
+    color: #fff;
+}
+#nav .listbox span{
+    width: 30px;
+    height: 30px;
+    font: 700 22px "华文楷体";
+    padding-left: 100px;
+    cursor: pointer;
+    color: #fff;
+}
+#nav #menu{
+    width: 1000px;
+    height: 35px;
+    position: absolute;
+    left: 500px;
+    bottom: 0;
+
+}
+#nav #menu li{
+    height: 35px;
+    float: left;
+    font: 700 20px "华文楷体";
+    margin-right: 15px;
+    cursor: pointer;
+
+}
+#nav #menu li:hover{
+    color: #ff6a00
+}
+/* 隐形菜单栏 */
+ #list{
+    width: 250px;
+    height: 391px;
+    background: #eff;
+    position: absolute;
+    top: 120px;
+    left: 200px; 
+    cursor: pointer; 
+ }
+ .inv{
+     display: none;
+ }
+  #list ul{
+     width: 230px;
+     height: 115px;
+     border-bottom: 1px dotted #666;
+     padding: 15px 10px 0 10px;
+     overflow: hidden;
+     cursor: pointer;
+     
+ }
+  #list ul:hover{
+     border-left: 3px solid #ff6a00
+ }
+  #list ul li{
+     display: block;
+     float: left;
+     font: 600 18px "华文楷体";
+     padding: 6px 9px 0 0;
+     color: #888;
+ }
+  #list ul p{
+    font: 800 22px "华文楷体";
+    color: #ff6a00
+ }
+/* 详情图片放大镜 */
+#print{
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+.bigbox {
+    width:500px;
+    height: 700px;
+    margin-left: 100px;
+    position: absolute;
+    top: 20px;
+}
+.bigbox .biglist{
+    width: 500px;
+    height: 550px;
+    cursor: pointer;
+}
+.bigbox .smalllist{
+    width: 530px;
+    height: 190px;
+    padding: 0 40px;
+}
+.bigbox  li img{
+    width: 100px;
+    height: 109px;
+    float: left;
+    cursor: pointer;
+    display: block;
+    margin: 10px 15px 0;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+}
+.bigbox  li img:hover{
+    border: 3px solid #000;
+}
+
+.glass{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border: 1px solid palevioletred;
+    border-radius: 50%;
+    position: absolute;
+    top: 200px;
+    left: 700px;
+    display: none;
+}
+.glass img{
+    width: 2500px;
+    height: 2500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.mask{
+    width: 100px;
+    height: 100px;
+    opacity: .5;
+    background: #666;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    pointer-events: none;
+}
+#print #intro{
+    width: 750px;
+    height: 500px;
+    position: absolute;
+    top: 20px;
+    right: 100px;
+}
+#print #intro>h2{
+    padding: 3px;
+}
+#print #intro>p{
+    width: 750px;
+    height: 30px;
+    font-size: 16px;
+    color: #000;
+    padding: 5px; 
+    padding-bottom: 10px;
+}
+#print #intro>p span{
+    color: #ff6a00;
+    font-size: 18px;
+    padding: 0 3px;
+}
+#print #intro #price{
+    width: 730px;
+    height: 50px;
+    background: #ff6a00;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    padding:0 10px
+}
+#intro #price li{
+    width: 50px;
+    height: 20px;
+    float: left;
+    padding-top: 20px;
+}
+#intro #price li:nth-of-type(2){
+    padding-top: 15px;
+    font: 800 26px "华文楷体";
+}
+ #intro #price p:nth-of-type(1){
+    width: 200px;
+    position: absolute;
+    bottom: 5px;
+    left: 200px;
+}
+#intro #price p:nth-of-type(2){
+    position: absolute;
+    bottom: 5px;
+  right: 50px;
+} 
+#intro #infor{
+    width: 750px;
+    height: 260px;
+    background: #eee;
+    overflow: hidden;
+    
+}
+#intro #infor li{
+    width: 750px;
+    height: 70px;
+    padding-top: 20px;
+    position: relative;
+   
+}
+#intro #infor li span{
+    position: absolute;
+    left: 30px;
+    color: #888;
+}
+#intro #infor li p{
+    width: 600px;
+    position: absolute;
+    right: 50px;
+}
+#intro #state{
+    width: 750px;
+    height: 20px;
+    padding: 5px;
+    font: 700 18px "华文楷体";
+    position: relative; 
+}
+#intro #state span{
+    color: #888;
+    padding-left: 10px;
+}
+#intro #state p{
+    position: absolute;
+    top: 5px;
+    left: 110px;
+
+}
+#intro #city{
+    width: 750px;
+    height: 50px;
+    background: papayawhip;
+}
+#intro #city select{
+    float: left;
+}
+
+
