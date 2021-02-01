@@ -1,0 +1,171 @@
+@charset  "utf-8";
+html body{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: #FFB0B6;
+    background-size: cover;
+    font-family:"华文楷体"; 
+   
+}
+/* 头部 */
+.big-head{
+    width: 100%;
+    height: 50px;
+    /* background: #ccc; */
+}
+.head{
+    width: 1500px;
+    height: 50px;
+    margin: 0 auto;
+    position: relative;
+    color: #fff;
+    font: 500 18px "华文楷体";
+}
+.head p{
+    position: absolute;
+    top: 10px;
+    left: 200px;
+    
+}
+.head p span{
+    padding: 20px;
+}
+.head ul{
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    right: 100px;
+}
+
+.head ul li{
+    width: 50px;
+    height: 50px;
+    float: left;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+#nav{
+    width: 100%;
+    height: 70px;
+    background: #fff;
+    position: relative;
+}
+#nav .listbox{
+    width: 230px;
+    height: 45px;
+    position: absolute;
+    left: 200px;
+    bottom: 0;
+    border-radius: 20px 20px 0 0;
+    font-size: 18px;
+    font: 700 20px "华文楷体";
+    background:#ff6a00;
+    padding:8px 0 0 20px;
+    color: #fff;
+}
+#nav .listbox span{
+    width: 30px;
+    height: 30px;
+    font: 700 22px "华文楷体";
+    padding-left: 100px;
+    cursor: pointer;
+    color: #fff;
+}
+#nav #menu{
+    width: 1000px;
+    height: 35px;
+    position: absolute;
+    left: 500px;
+    bottom: 0;
+
+}
+#nav #menu li{
+    height: 35px;
+    float: left;
+    font: 700 20px "华文楷体";
+    margin-right: 15px;
+    cursor: pointer;
+
+}
+#nav #menu li:hover{
+    color: #ff6a00
+}
+/* 付款信息 */
+#infor{
+    width: 1000px;
+    min-height: 900px;
+    background: #fff;
+    border-radius: 10px;
+    margin: 20px auto;
+    position: relative;
+}
+#infor ul{
+    padding: 20px 20px;
+    border-bottom: 1px solid #ccc;
+   
+}
+#infor ul h2{
+    padding-bottom: 5px;
+}
+#infor ul li{
+    padding: 5px 20px;
+    font: 600 18px "华文楷体";
+    color: #666;
+    position: relative;
+}
+#infor ul li span{
+    width: 200px;
+    height: 20px;
+}
+#infor ul li input{
+    display: inline-block;
+    width: 200px;
+    height: 20px;
+    position: absolute;
+    left: 150px;   
+}
+#infor ul li #province{
+    margin-left: 52px;
+}
+#infor ul #inver{
+    width: 900px;
+    background: #ccc;
+    border-radius: 10px;
+}
+#infor #price{
+    min-width: 400px;
+    height: 50px;
+    position: absolute;
+    bottom: 30px;
+    right: 100px;
+}
+#infor #price p{
+    height: 50px;
+    font: 700 20px "华文楷体";
+    line-height: 50px;
+    float: left;
+    margin-right: 30px;
+}
+#infor #price p #num{
+    padding: 3px;
+    color: #ff6a00;
+    font: 700 20px "华文楷体";
+}
+#infor #price p #money{
+    padding: 3px;
+    color: #ff6a00;
+    font: 700 20px "华文楷体";
+}
+#infor #price #botton{
+    width: 100px;
+    height: 40px;
+    background: #ff6a00;
+    border-radius: 10px;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 5px;
+    cursor: pointer;
+}
