@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>付款</title>
+    <link rel="stylesheet" href="css/付款.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="icon" href="images/logo.png">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="big-head">
+        <div class="head">
+            <p><img src="images/logo.png" alt=""><span>小姐姐花店</span></p>
+            <ul>
+                <li id="login">登录</li>
+                <li>|</li>
+                <li id="register">注册</li>
+            </ul>
+        </div>
+    </div>
+    <!-- 导航 -->
+    <div id="nav">
+        <p class="listbox">所有列表<span class="listchange">☰</span></p>
+
+
+        <ul id="menu">
+            <li id="home-page">首页</li>
+            <li>鲜花</li>
+            <li>永生花</li>
+            <li>花灯</li>
+            <li>蛋糕</li>
+            <li>花语大全</li>
+            <li>婚礼布场</li>
+            <li>礼盒</li>
+        </ul>
+    </div>
+    <!-- 付款信息 -->
+    <div id="infor">
+        <ul id="consignee">
+            <h2>收货人信息</h2>
+            <li id="person"><span>收货人</span><input type="text" placeholder="请输入收货人姓名"></li>
+            <li><span>手机号码</span><input type="text" placeholder="请输入收货人联系方式"></li>
+            <li><span>所在地区</span>
+                <select name="" id="province"></select>
+                <select name="" id="city"> </select>
+                <select name="" id="area"> </select></li>
+            <li><span>详细地址</span><input type="text" placeholder="请输入收货人详细地址"></li>
+        </ul>
+        <ul>
+                <h2>订购人信息</h2>
+                <li id="person"><span>订购人姓名</span><input type="text" placeholder="请输入订购人姓名"></li>
+                <li id="person"><span>订购人手机</span><input type="text" placeholder="请输入订购人手机"></li>
+
+        </ul>
+        <ul>
+                <h2>送达日期</h2>
+                <li id="person"><span>送达日期</span><input type="text" placeholder="请输入送达日期"></li>
+               
+        </ul>
+        <ul>
+                <h2>贺卡留言</h2>
+                <li id="person"><textarea name="" id="" placeholder="写下你的祝福（300字以内）"cols="30" rows="10"></textarea>
+        </ul>
+        <ul>
+                <h2>核对购物清单</h2>
+                <li id="inver"></li>
+                
+        </ul>
+        <div id="price">
+            <p>共<span id="num">0</span>件商品</p>
+            <p>应付：<span id="money"></span></p>
+            <p id="botton">提交订单</p>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
+<script src="js/citys.js"></script>
+<script src="js/付款.js"></script>

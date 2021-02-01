@@ -129,3 +129,15 @@ register.onclick=function(){
     
     location.href = "http://192.168.10.13/毕设/register.html";
 }
+// 注册界面
+$("#register").click(function () {
+    location.href = "http://192.168.10.13/毕设/register.html";
+})
+// 登录界面
+$("#login").click(function(){
+    location.href = "http://10.35.161.139/毕设/login.html";
+})
+// 返回首页
+$("#home-page").click(function(){
+    location.href = "http://10.35.161.139/毕设/首页.html";
+})
